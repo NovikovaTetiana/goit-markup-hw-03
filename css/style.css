@@ -6,10 +6,27 @@
     --background-color: #2f303a;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
 body {
     background-color: #ffffff;
     color: var(--main-color-text);
     font-family: roboto, sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+    padding: 0 15px;
 }
 
 .link {
@@ -17,6 +34,8 @@ body {
 }
 
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -43,7 +62,9 @@ body {
 
 .header-nav {}
 
-.header-nav-list {}
+.header-nav-list {
+    outline: #2196f3;
+}
 
 .header-item {}
 
@@ -78,20 +99,31 @@ body {
 }
 
 /* __________HERO___________ */
-.hero {}
+.hero {
+    text-align: center;
+}
 
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 0;
+
     background-color: var(--background-color);
     color: var(--white-color-text);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
 .btn {
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 32px;
+    margin-top: 30px;
+    min-width: 216px;
+
     font-family: 'Roboto';
     color: var(--white-color-text);
     font-style: normal;
@@ -101,8 +133,6 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     background-color: var(--accent-color);
-    border: none;
-    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -240,6 +270,13 @@ body {
 .filters-item {}
 
 .btn-filters {
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    padding: 6px 22px;
+    min-width: 73px;
+
+
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
@@ -248,13 +285,13 @@ body {
     letter-spacing: 0.03em;
     color: var(--main-color-text);
     background: #f5f4fa;
-    border-radius: 4px;
-    border: none;
+
 }
 
 .btn-filters:hover,
 .btn-filters:focus,
 .btn-filters:active {
+    padding: 6px 25px;
     background: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
