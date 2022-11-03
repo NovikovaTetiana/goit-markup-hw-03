@@ -51,6 +51,7 @@ body {
 /* __________LOGO___________ */
 
 .logo {
+    margin-right: 93px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -72,13 +73,24 @@ body {
     padding-bottom: 25px;
 }
 
-.header-nav {}
+.main-nav {
+    display: flex;
+    align-items: center;
+}
 
-.header-nav-list {}
+.header-nav {
+    margin-right: auto;
+}
 
-.header-item {}
+.header-nav-list {
+    display: flex;
+}
 
 .header-item-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--main-color-text);
     font-weight: 500;
     font-size: 14px;
@@ -95,7 +107,19 @@ body {
     color: var(--accent-color);
 }
 
+.header-list {
+    display: flex;
+}
+
+.header-item+.header-item {
+    margin-left: 50px;
+}
+
 .header-list-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--secondary-color-text);
     font-weight: 500;
     font-size: 14px;
@@ -160,7 +184,6 @@ body {
 
 .featers {
     padding-top: 94px;
-    outline: 1px solid red;
 }
 
 .features-title {
@@ -201,7 +224,6 @@ body {
 .occupation {
     padding-top: 94px;
     padding-bottom: 94px;
-    outline: 1px solid red;
 }
 
 .occupation-title {
@@ -234,7 +256,7 @@ body {
 
 .team-item {}
 
-}
+
 
 .team-img {
     margin-bottom: 30px;
@@ -283,11 +305,13 @@ body {
 
 .address {}
 
-.address-list {}
+.address-list {
+    margin-top: 20px;
+}
 
 
-.address-item {
-    margin-bottom: 9px;
+.address-item+.address-item {
+    margin-top: 9px;
 }
 
 .address-item-link {
