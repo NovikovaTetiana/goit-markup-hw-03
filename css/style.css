@@ -69,8 +69,6 @@ body {
 
 .header {
     border-bottom: 1px solid #ececec;
-    padding-top: 24px;
-    padding-bottom: 25px;
 }
 
 .main-nav {
@@ -141,7 +139,7 @@ body {
 
 .hero-posihion {
     display: flex;
-    justify-self: center;
+    justify-content: center;
 }
 
 .hero-title {
@@ -315,9 +313,9 @@ body {
 
 /* __________FOOTER___________ */
 .footer {
+    display: block;
     padding-top: 60px;
     padding-bottom: 60px;
-
     background-color: var(--background-color);
 }
 
@@ -353,6 +351,10 @@ body {
 /* __________PORTFOLIO___________ */
 
 
+.portfolio-section {
+    padding-top: 94px;
+}
+
 .portfolio-title {
     position: absolute;
     white-space: nowrap;
@@ -369,9 +371,14 @@ body {
 /* __________FILTERS___________ */
 
 
-.filters {}
+.filters {
+    display: flex;
+    justify-content: center;
+}
 
-.filters-item {}
+.filters-item+.filters-item {
+    margin-left: 8px;
+}
 
 .btn-filters {
     display: inline-block;
@@ -405,9 +412,16 @@ body {
 
 /* __________PORTFOLIO-CONTENT___________ */
 
-.portfolio-list {}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
-.portfolio-item {}
+.portfolio-item {
+    margin-left: 30px;
+}
 
 .portfolio-link {}
 
