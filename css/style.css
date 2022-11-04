@@ -35,6 +35,7 @@ body {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    border: 2px solid red;
 }
 
 .link {
@@ -69,6 +70,7 @@ body {
 
 .header {
     border-bottom: 1px solid #ececec;
+    outline: 2px solid red;
 }
 
 .main-nav {
@@ -82,6 +84,7 @@ body {
 
 .header-nav-list {
     display: flex;
+    gap: 50px;
 }
 
 .header-item-link {
@@ -107,11 +110,10 @@ body {
 
 .header-list {
     display: flex;
+    gap: 50px;
 }
 
-.header-item {
-    margin-left: 50px;
-}
+.header-item {}
 
 .header-list-link {
     display: block;
@@ -132,21 +134,18 @@ body {
 
 /* __________HERO___________ */
 .hero {
-    text-align: center;
     background-color: var(--background-color);
-    padding: 200px 452px;
+    padding: 200px 452px 200px 452px;
+    text-align: center;
+    outline: 2px solid red;
 }
 
-.hero-posihion {
-    display: flex;
-    justify-content: center;
-}
 
 .hero-title {
     display: block;
     margin-top: 0;
     margin-bottom: 30px;
-    width: 696px;
+    max-width: 696px;
 
     color: var(--white-color-text);
     font-weight: 900;
@@ -162,7 +161,7 @@ body {
 
 
 .btn {
-    display: inline-block;
+    display: block;
     border: none;
     border-radius: 4px;
     padding: 10px 32px;
@@ -192,6 +191,7 @@ body {
 
 .featers {
     padding-top: 94px;
+
 }
 
 .features-title {
@@ -209,12 +209,10 @@ body {
 
 .features-list {
     display: flex;
+    gap: 30px;
 }
 
-.features-item+.features-item {
-    margin-left: 30px;
-
-}
+.features-item {}
 
 .features-heading {
     margin-bottom: 10px;
@@ -226,6 +224,8 @@ body {
 }
 
 .features-text {
+    display: flex;
+    flex-basis: calc((100% - 90px) / 4);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -235,8 +235,7 @@ body {
 /* __________OCCUPATION___________ */
 
 .occupation {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 0;
 }
 
 .occupation-title {
@@ -251,11 +250,11 @@ body {
 
 .occupation-list {
     display: flex;
+    gap: 30px;
+    width: calc((100% - 60px) / 3);
 }
 
-.occupation-item+.occupation-item {
-    margin-left: 30px;
-}
+.occupation-item {}
 
 /* __________OUR TEAM___________ */
 
@@ -374,11 +373,10 @@ body {
 .filters {
     display: flex;
     justify-content: center;
+    gap: 8px;
 }
 
-.filters-item+.filters-item {
-    margin-left: 8px;
-}
+.filters-item {}
 
 .btn-filters {
     display: inline-block;
@@ -413,9 +411,10 @@ body {
 
 .portfolio-list {
     display: flex;
-    flex-wrap: wrap;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    /* flex-wrap: wrap; */
+    gap: 30px;
+    width: ((100% - 60px) / 3);
+    padding: 94px 0;
 }
 
 .portfolio-item {
@@ -423,6 +422,12 @@ body {
 }
 
 .portfolio-link {}
+
+.portfolio-card {
+    padding: 20px 24px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+}
 
 .portfolio-heading {
     font-size: 18px;
