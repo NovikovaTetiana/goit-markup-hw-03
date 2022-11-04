@@ -109,7 +109,7 @@ body {
     display: flex;
 }
 
-.header-item+.header-item {
+.header-item {
     margin-left: 50px;
 }
 
@@ -402,7 +402,6 @@ body {
 .btn-filters:hover,
 .btn-filters:focus,
 .btn-filters:active {
-    padding: 6px 25px;
     background: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
