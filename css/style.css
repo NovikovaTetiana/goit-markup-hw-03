@@ -135,7 +135,7 @@ body {
 /* __________HERO___________ */
 .hero {
     background-color: var(--background-color);
-    padding: 200px 452px;
+    padding: 200px;
     text-align: center;
 }
 
@@ -145,7 +145,7 @@ body {
     margin-bottom: 30px;
     margin-right: auto;
     margin-left: auto;
-    max-width: 696px;
+    width: 696px;
 
 
     color: var(--white-color-text);
@@ -265,6 +265,12 @@ body {
     margin-bottom: 50px;
     text-align: center;
 
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+
 }
 
 .team-list {
@@ -309,7 +315,6 @@ body {
 
 /* __________FOOTER___________ */
 .footer {
-    display: block;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--background-color);
@@ -425,6 +430,7 @@ body {
     padding: 20px 24px;
     background: #ffffff;
     border: 1px solid #eeeeee;
+    border-top: 0;
 }
 
 .portfolio-heading {
