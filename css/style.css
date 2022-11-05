@@ -23,6 +23,8 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 body {
@@ -133,7 +135,7 @@ body {
 /* __________HERO___________ */
 .hero {
     background-color: var(--background-color);
-    padding: 200px 452px 200px 452px;
+    padding: 200px 452px;
     text-align: center;
 }
 
@@ -141,9 +143,10 @@ body {
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     max-width: 696px;
+
 
     color: var(--white-color-text);
     font-weight: 900;
@@ -159,7 +162,7 @@ body {
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 216px;
-    margin: 0;
+    margin: 0 auto;
 
     font-family: 'Roboto';
     color: var(--white-color-text);
@@ -244,10 +247,11 @@ body {
 .occupation-list {
     display: flex;
     gap: 30px;
-    width: calc((100% - 60px) / 3);
 }
 
-.occupation-item {}
+.occupation-item {
+    width: calc((100% - 60px) / 3);
+}
 
 /* __________OUR TEAM___________ */
 
